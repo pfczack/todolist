@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Avançado</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <script src="<https://kit.fontawesome.com/a076d05399.js>" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Gerenciador de Tarefas - Estilo Trello</h1>
+    <!-- Botão para abrir o modal de nova tarefa -->
+    <button id="abrir-modal" class="btn-primary"><i class="fas fa-plus"></i> Nova Tarefa</button>
+  </header>
+
+  <!-- Modal para Adicionar Tarefa -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Adicionar Nova Tarefa</h2>
+      <input type="text" id="nova-tarefa" placeholder="Digite sua tarefa...">
+      <button id="adicionar-tarefa" class="btn-primary">Adicionar</button>
+    </div>
+  </div>
+
+  <!-- Contêiner principal para as colunas -->
+  <div class="board">
+    <!-- Coluna para Lista de Tarefas -->
+    <div class="coluna">
+      <h2>Lista</h2>
+      <ul id="tarefas-pendentes" class="lista-tarefas"></ul>
+    </div>
+
+    <!-- Coluna para Tarefas em Progresso -->
+    <div class="coluna">
+      <h2>Em Progresso</h2>
+      <ul id="tarefas-andamento" class="lista-tarefas"></ul>
+    </div>
+
+    <!-- Coluna para Tarefas em Revisão -->
+    <div class="coluna">
+      <h2>Em Revisão</h2>
+      <ul id="tarefas-progresso" class="lista-tarefas"></ul>
+    </div>
+
+    <!-- Coluna para Tarefas Concluídas -->
+    <div class="coluna">
+      <h2>Concluídas</h2>
+      <ul id="tarefas-concluidas" class="lista-tarefas"></ul>
+    </div>
+  </div>
+
+  <footer>
+    <p> Exercício feito junto a professora Laryssa </p>
+    <p> Melhorado como exercício </p>
+  </footer>
+
+  <!-- Script JS -->
+  <script src="JS/scrips.js"></script>
+</body>
+</html>
